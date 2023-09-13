@@ -1,32 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
-    <link rel="stylesheet" href="css/base.css">
+  <meta charset="UTF-8">
+  <title>FIGMA | Макеты для верстки — Верстка страницы</title>
+  <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
-    <!-- Начало: Данный блок удалять нельзя -->
-    <div class="maketforfigma">
-        <a href="https://t.me/s/FigmaToHTML" target="_blank">
-            <img src="img/logo.png">
-        </a>
-        <div>
-            <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
-            </p>
-            <p>
-                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
-            </p>
-        </div>
+  <!-- Начало: Данный блок удалять нельзя -->
+  <div class="maketforfigma">
+    <a href="https://t.me/s/FigmaToHTML" target="_blank">
+      <img src="img/logo.png" alt="logo">
+    </a>
+    <div>
+      <p>
+        Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a
+          href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
+      </p>
+      <p>
+        При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь
+        получил оплату за верстку этого макета.
+      </p>
     </div>
-    <!-- Конец -->
+  </div>
+  <!-- Конец -->
 
-    <div class="main">
-        В данном блоке размещается верстка
-    </div>
+  <div class="main">
+    <header class="header">
+      <div class="container">
+        <div class="header__top flex">
+          <address class="header__address flex">
+            <div class="header__location">
+              <span class="location">
+                Location:
+              </span>
+              <span class="location">
+                Dubai , Abudhabi
+              </span>
+            </div>
+            <div class="header__timing">
+              <span class="timing">
+                Timing:
+              </span>
+              <span class="timing">
+                9:00&nbsp;AM to&nbsp;10:00&nbsp;PM (GMT+4) (24/7)
+              </span>
+            </div>
+          </address>
+          <div class="header__call">
+            <a href="tel:+77085151518" class="header__call_link">
+              +7 (708) 51 51 518
+            </a>
+            <a href="tel:+77005151518" class="header__call_link">
+              +7 (700) 51 51 518
+            </a>
+          </div>
+        </div>
+        <div class="header__bottom flex">
+          <img src="img/header_logo.png" alt="logo" class="header__logo">
+          <nav class="header__nav">
+            <ul class="header__nav_list list-reset flex">
+              <li class="header__nav_item">
+                <a href="#" class="header__nav_link">
+                  Home
+                </a>
+              </li>
+              <li class="header__nav_item">
+                <a href="#services" class="header__nav_link">
+                  Services
+                </a>
+              </li>
+              <li class="header__nav_item">
+                <a href="#about" class="header__nav_link">
+                  About&nbsp;Us
+                </a>
+              </li>
+              <li class="header__nav_item">
+                <a href="#contact" class="header__nav_link">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__btn">
+            Contact&nbsp;Us
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="hero">
+        <div class="container flex">
+          <div class="hero__content flex">
+            <h1 class="hero__title">
+              <span>River</span> Ride Building Maintenance
+            </h1>
+            <p class="hero__descr">
+              Your Trusted Partner for Quality Maintenance Services in <b>Dubai</b> and <b>Abu Dhabi</b>
+            </p>
+            <button class="hero__btn">
+              Contact&nbsp;Us
+            </button>
+          </div>
+          <img src="img/hero_bg.png" alt="image" class="hero__img">
+        </div>
+      </section>
+      <section id="services" class="services">
+        <div class="container">
+          <h2 class="services__title">
+            Our Services
+          </h2>
+          <p class="services__descr">
+            Comprehensive Solutions for Property Maintenance and Beyond
+          </p>
+          <div class="services__card">
+            <ul class="services__list list-reset flex">
+              <li class="services__item services__item_bg1">
+                <h3 class="services__item_title">
+                  Cleaning Services
+                </h3>
+                <p class="services__item_descr">
+                  We&nbsp;take pride in&nbsp;maintaining pristine spaces with our top-notch cleaning solutions,
+                  including
+                  regular cleaning, deep cleaning, window cleaning, and upholstery cleaning.
+                </p>
+              </li>
+              <li class="services__item services__item_bg2">
+                <h3 class="services__item_title">
+                  Plumbing Services
+                </h3>
+                <p class="services__item_descr">
+                  From fixing leaks to&nbsp;installing fixtures, our skilled plumbers deliver reliable solutions for all
+                  your plumbing needs, ensuring&nbsp;a&nbsp;smooth and worry&nbsp;-&nbsp;free&nbsp;water&nbsp;system.
+                </p>
+              </li>
+              <li class="services__item services__item_bg3">
+                <h3 class="services__item_title">
+                  A/C WORKS
+                </h3>
+                <p class="services__item_descr">
+                  Beat the heat with our expert A/C&nbsp;maintenance, repair, and installation services, tailored
+                  to&nbsp;keep your indoor environment cool and comfortable.
+                </p>
+              </li>
+              <li class="services__item services__item_bg4">
+                <h3 class="services__item_title">
+                  Electrical Maintenence
+                </h3>
+                <p class="services__item_descr">
+                  Safety and efficiency go&nbsp;hand in&nbsp;hand with our certified electricians, offering reliable
+                  electrical repairs, installations, upgrades, and inspections
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="choose">
+        <div class="container">
+          <h2 class="choose__title">
+            Why Choose&nbsp;Us?
+          </h2>
+          <div class="choose__content">
+            <ul class="choose__list list-reset flex">
+              <li class="choose__item choose__item_bg1">
+                <p>Expert Team</p>
+              </li>
+              <li class="choose__item choose__item_bg2">
+                Quality and Reliability
+              </li>
+              <li class="choose__item choose__item_bg3">
+                Customer-Centric Approach
+              </li>
+              <li class="choose__item choose__item_bg4">
+                Timely and Responses
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about__content">
+            <h2 class="about__title">
+              About&nbsp;Us
+            </h2>
+            <p class="about__descr">
+              At&nbsp;River Ride Building Maintenance, we&nbsp;are a&nbsp;passionate team dedicated to&nbsp;delivering
+              top-notch property maintenance solutions in&nbsp;Dubai and Abu Dhabi. With years of&nbsp;experience and
+              a&nbsp;commitment to&nbsp;excellence, we&nbsp;take pride in&nbsp;providing comprehensive services
+              to&nbsp;ensure your property remains in&nbsp;optimal condition.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="queries">
+        <div class="container">
+          <div class="queries__content">
+            <form action="#" class="queries__form">
+              <h2 class="queries__title">
+                Any Queries
+              </h2>
+              <p class="queries__descr">
+                Feel free to&nbsp;contact&nbsp;us
+              </p>
+              <input type="text" class="name" placeholder="Name" required>
+              <input type="text" class="contact" placeholder="Contact No" required>
+              <button class="queries__btn" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__top flex">
+          <img src="img/footer_logo.png" alt="logo" class="footer__logo">
+          <nav class="footer_nav flex">
+            <div class="nav__services">
+              <h3 class="nav__title">
+                Services
+              </h3>
+              <ul class="nav__services__list list-reset">
+                <li class="nav__services__item">
+                  <a href="#" class="footer__link">
+                    Services
+                  </a>
+                </li>
+                <li class="nav__services__item">
+                  <a href="#" class="footer__link">
+                    About&nbsp;Us
+                  </a>
+                </li>
+                <li class="nav__services__item">
+                  <a href="#" class="footer__link">
+                    Contact&nbsp;Us
+                  </a>
+                </li>
+                <li class="nav__services__item">
+                  <a href="#hero" class="footer__link">
+                    Home
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div id="contact" class="nav__contact">
+              <h3 class="nav__title">
+                Contact
+              </h3>
+              <ul class="nav__contact__list list-reset">
+                <li class="nav__contact__item footer__contact__item">
+                  <a href="tel:+77088028888" class="footer__link">
+                    +7 (708) 802 88 88
+                  </a>
+                </li>
+                <li class="nav__contact__item footer__contact__item">
+                  <a href="tel:+77088038888" class="footer__link">
+                    +7 (708) 803 88 88
+                  </a>
+                </li>
+                <li class="nav__contact__item footer__contact__item">
+                  <a href="tel:+77085151518" class="footer__link">
+                    +7 (708) 51 51 518
+                  </a>
+                </li>
+                <li class="nav__contact__item footer__contact__item">
+                  <a href="tel:+77005151518" class="footer__link">
+                    +7 (700) 51 51 518
+                  </a>
+                </li>
+                <li class="nav__contact__item">
+                  <a href="tel:+77088028888" class="footer__link footer__link_whatsapp">
+                    +7 (708) 802 88 88
+                  </a>
+                </li>
+                <li class="nav__contact__item">
+                  <a href="#" class="footer__link footer__link_geo">
+                    Dubai and Abu Dhabi
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__social">
+              <h3 class="nav__title">
+                Social
+              </h3>
+              <ul class="footer__social__list list-reset">
+                <li class="footer__social__item">
+                  <a href="#" class="footer__link footer__link-bg1">
+                    River_Ride_OfficIal
+                  </a>
+                </li>
+                <li class="footer__social__item">
+                  <a href="#" class="footer__link footer__link-bg2">
+                    River_Ride_OfficIal
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            Copyright &copy;&nbsp;River Ride 2023. All rights reserved.
+          </p>
+        </div>
+    </footer>
+  </div>
 
 </body>
+
 </html>
